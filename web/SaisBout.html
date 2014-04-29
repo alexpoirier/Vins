@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vin</title>
+    <link rel="stylesheet" href="vin10.css">
+  </head>
+  <body>
+<h1>Saisir bouteille</h1>
+
+<p>Veillez saisir la nouvelle bouteille</p>
+
+<form id="frmSais" method="post">
+<p>Marque :</p>
+
+<p>Nom&nbsp;:&nbsp; <input id="txtMarque" name="txtNom" placeholder="entrer la maquer" size="40" type="text" />&nbsp; R&eacute;gion : <input id="txtReg" name="txtReg" placeholder="entrer l'année" size="45" type="text" /></p>
+
+<p>C&eacute;page : <select id="selCepage" name="selCepage" simple=""><option selected="selected" value="SauB">Sauvignon-Blanc</option><option value="CabM">Cabernet-Merlot</option><option value="cabs">Carbernet-Savignon</option><option value="Cha">Chardonnay</option><option value="PGr">Pinot gris</option><option value="Shi">Shiraz</option></select>&nbsp;Couleur :&nbsp; <select name="selCoul"><option selected="selected" value="bl">Blanc</option><option value="Ro">Rouge</option></select>&nbsp;Pastille : <select name="selPast"><option selected="selected" value="ArrCha">Aromatique-Charnu</option><option value="ArrSou">Arromatique-Souple</option><option value="DelLeg">D&eacute;lica-L&eacute;ger</option><option value="FruVif">Fruit&eacute;-Vif</option></select></p>
+
+<p>Bouteille :</p>
+
+<p>Ann&eacute;e : <input id="txtAn" maxlength="4" name="txtAn" placeholder="date achat" size="4" type="text" />&nbsp;Degr&eacute; : &nbsp;<input id="txtDeg" maxlength="2" name="txtDegre" placeholder="Année de garde" size="2" type="text" />&nbsp;Date d&#39;achat : <input maxlength="10" id="txtAchat" name="txtAchat" size="10" type="text" />&nbsp;Ann&eacute;e de garde : <input id="txtGarde" maxlength="4" name="txtGarde" size="4" type="text" /></p>
+
+<p>Emplacement : <select name="selEmpl"><option selected="selected" value="B">Bas</option><option value="H">Haut</option></select>&nbsp;Prix : <input maxlength="8" id="txtPrix" name="txtPrix" size="8" type="text" /></p>
+
+<p>Commentaire :<textarea cols="5" name="txtCmt" style="width: 166px; height: 44px"></textarea></p>
+
+<p>Ouverture :<textarea cols="5" name="txtOuv" style="width: 166px; height: 44px"></textarea></p>
+
+<p>&nbsp;<input id="btnAjouter" type="submit" value="Ajouter �&nbsp; la liste" /></p>
+</form>
+<!--
+    <input type="button" id="btnAfficher" value="Afficher la liste">-->
+    <script type="application/dart" src="vin10.dart"></script>
+    <script src="packages/browser/dart.js"></script></body>
+</html>
